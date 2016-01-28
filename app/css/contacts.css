@@ -1,0 +1,117 @@
+.contact_blck {
+  min-height: 700px;
+}
+.contact_form {
+  height: 500px;
+  width: 404px;
+  margin: 30px auto;
+}
+.contact_form-lable{
+  display: block;
+	font-family: open_sansregular, open_sanslight;
+	font-size: 14px;
+	color: #727070;
+
+}
+.contact_form-class {
+  display: block;
+  margin-top: 10px;
+  border-color: rgb(72, 203, 232);
+  border: 1px solid rgb(214, 213, 211);
+  border-radius: 3px;
+  background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+  width: 190px;
+  height: 39px;
+  font-family: open_sanslight, open_sansregular;
+  font-size: 12px;
+  padding-left: 10px; 
+}
+.contact_form-textarea{
+  width: 401px;
+  height: 181px;
+}
+
+.contact_form-conteiner{
+	position: absolute;
+}
+.contact_form-email{
+	margin-left: 210px;
+}
+
+.contact_form-message{
+	margin-top: 80px;
+}
+.contact_form-textarea{
+	padding-top: 10px; 
+  margin-bottom: 20px;
+}
+.contact_form-capcha{
+	margin-top: 303px;
+}
+.capcha{
+  float: left;
+	margin-top: 25px;
+background: #fff;
+}
+.capcha-img{
+	height: 83px;
+	width: 195px;
+}
+.capcha-input{
+	margin-top: 22px;
+}
+.buttons{
+	position: absolute;
+	margin-top: 440px;
+	width: 400px;
+}
+.formsend{
+  width: 121px;
+  height: 37px;
+  margin-left: 30px;
+  border-radius: 5px;
+  background-color: rgb(67,183,150);
+  background-image: -moz-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+  font-family: OpenSansSemibold;
+  font-size: 14px;
+  color: rgb(30, 116, 101);
+  line-height: 1.571;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+.formsend:hover{
+	background-color: rgb(58,160,135);
+  background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+}
+.formclear{
+  width: 121px;
+  height: 37px;
+  margin-right: 30px;
+  border-radius: 5px;
+  background-color: rgb(233,230,228);
+  background-image: -moz-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(233,230,228) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+  font-size: 14px;
+  font-family: open_sanssemibold;
+  color: rgb(114, 112, 112);
+  line-height: 1.571;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+.formclear:hover{
+	background-color: rgb(194,192,192);
+  background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+
+}

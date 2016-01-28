@@ -1,0 +1,121 @@
+
+.myfoto {
+  float: left;
+  margin-left: 43px;
+  height: 150px;
+  width: 150px;
+  border: 1px solid #dbdad9;
+  border-radius: 50%;
+  box-shadow: 3.236px 2.351px 26.88px 5.12px rgba(236, 232, 227, 0.75);
+}
+.foto_in {
+  margin: 8px auto;
+  border: 1px solid #dbdad9;
+  height: 131px;
+  width: 131px;
+  border-radius: 50%;
+  box-shadow: inset 0px 2px 24px 0px rgba(121, 121, 121, 0.23);
+  background: url(../img/iam.jpg);
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 100%;
+  text-indent: -9999px;
+}
+.aboutme {
+  float: right;
+  width: 450px;
+  min-height: 170px;
+}
+.aboutme-list {
+  list-style-type: none;
+  padding-left: 20px;
+}
+.aboutme-list>li {
+  font-family: open_sansregular, open_sanslight;
+  font-size: 14px;
+  padding-bottom: 7px;
+  padding-right: 15px;
+  color: #727070;
+}
+.aboutme-list>li>span {
+  font-family: open_sanssemibold;
+  font-size: 14px;
+  font-weight: normal;
+  display: inline;
+  vertical-align: top;
+}
+
+.skils{
+  list-style-type: none;
+  display: inline-block;
+  padding: 2px 0 0 10px;
+  width: 250px;
+
+}
+.skils-item{
+  display: block;
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 7px;
+}
+.skils-item>a{
+ background: url(../img/buble_midle.png) repeat-x;
+  display: block;
+  height: 21px;
+  padding: 0 3px;
+  text-decoration: none;
+  font-family: open_sanssemibold;
+  font-size: 9px;
+  color: #1e7465;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.45);
+   }
+.skils-item>a:before{
+  display: block;
+  content: " ";
+  background: url(../img/buble_start.png) no-repeat;
+  height: 21px;
+  margin-left: -14px;
+  margin-bottom: -18px;
+}
+.skils-item>a:after{
+  content: " ";
+  display: block;
+  background: url(../img/buble_end.png) no-repeat;
+  background-position: right;
+  height: 21px;
+  margin-top: -15px;
+  margin-right: -9px;
+}
+
+
+/*______________________________________________________________________________*/
+.ico-img{
+
+}
+.infoblock {
+  list-style-type: none;
+  padding-left: 40px;
+  margin: 0;
+}
+
+.infoblock-item {
+  border-bottom: 1px solid #dbdbda;
+  width: 560px;
+  padding: 20px 0;
+}
+.infoblok-lastchild {
+  border: none;
+}
+
+.infoblock-info {
+  float: left;
+  width: 85%;
+  color: #727070;
+  margin-left: 20px;
+}
+
+.infoblock-info>span {
+  font-family: open_sanssemibold;
+  font-size: 14px;
+  padding-top: 5px;
+}

@@ -1,0 +1,111 @@
+
+.container {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
+.login {
+	position: absolute;
+	top: 30%;
+	left: 38%;	
+}
+
+.authorize {
+	font-family: open_sanslight, sans-serif;
+	font-size: 12px;
+	color: #727070;
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+
+.login_form {
+	width: 330px;
+	background-color: #f1f0ef;
+	border: 1px solid #d6d4d3;
+	border-radius: 4px;
+}
+
+.login_input {
+	display: block;
+	width: 190px;
+	height: 40px;
+	border-radius: 4px;
+	border: 1px solid #d6d4d3;
+	background-image: linear-gradient(rgba(251,249,249,0), #e9e7e7);
+	margin-bottom: 25px;
+	margin-left: 35px;
+	padding-left: 70px;
+	font-family: open_sanslight, sans-serif;
+	font-size: 12px;
+	color: #c7c6c6;
+}
+
+.login_input_email {
+	margin-top: 40px;
+/*	background-image: url(../pic/email.png);*/
+/*	background-repeat: no-repeat;*/
+/*	background-position: 15px 0;*/
+}
+
+.login_input_password {
+/*	background-image: url(../pic/key.png);*/
+/*	background-repeat: no-repeat;*/
+/*	background-position: 15px 0;*/
+}
+
+.login_checkbox {
+	margin-left: 35px;
+	vertical-align: middle;
+}
+
+.remember_me {
+	font-family: open_sansregular, sans-serif;
+	color: #727070;
+	font-size: 14px;
+	line-height: 12px;
+}
+
+.login_submit {
+	display: block;
+	margin: 20px auto;
+	border: 1px solid #d6d4d3;
+	background-image: linear-gradient(rgba(251,249,249,0), #e9e7e7);
+	color: #727070;
+	width: 150px;
+	height: 40px;
+	font-family: open_sanssemibold, sans-serif;
+	font-size: 14px;
+	border-radius: 4px;
+}
+
+.login_submit:hover {
+	border: 1px solid #50c8aa;
+	background-image: linear-gradient(#5fdcbd, #3aa087);
+	color: #1e7465;
+}
+
+/*
+.copyright {
+	text-align: left;
+	font-family: open_sanslight, sans-serif;
+	font-size: 12px;
+	margin-top: 22px;
+}
+
+.a_lock {
+	padding-left: 28px;
+	text-decoration: none;
+	display: block;
+  float: left;	
+  font-family: open_sansbold, sans-serif;
+	font-size: 14px;
+	color: #9c9c9c;
+	margin-right: 60px;
+	margin-left: 170px;
+	background: url(../pic/sprite-lock-w23h42.png) no-repeat 0 0;
+}
+
+.a_lock:hover {
+	background: url(../pic/sprite-lock-w23h42.png) no-repeat 0 -21px;
+}*/
