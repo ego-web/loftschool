@@ -4,7 +4,6 @@ padding: 0;
 }
 .project-img, .addproject  {
   display: inline-block;
-  /*float: left;*/
   position: relative;
   background-color: #fff;
   border-radius: 5px;
@@ -18,11 +17,26 @@ padding: 0;
   vertical-align: top;
 
 }
+
+.moreinfo {
+  opacity: 0;
+  margin: 0 20%;
+  border: 1px solid #777;
+  color: #777;
+  border-radius: 5px;
+  display: block;
+  bottom: 60px;
+  position: relative;
+  text-align: center;
+  font-family: open_sanssemibold;
+}
+
 .project-img-link {
   width: 100%;
   display: block;
   height: 120px;
   overflow: hidden;
+  text-decoration: none;
 
 }
 .project-img-link img {
@@ -32,9 +46,14 @@ padding: 0;
   text-align:center;
   display:block; 
 }
-.project-img-link:hover {
-  opacity: 0.41;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=75);
+.project-img-link:hover img{
+  opacity: 0.25;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-img-link:hover .moreinfo{
+  opacity: 1;
 }
 
 .project-name-link {
@@ -52,7 +71,7 @@ padding: 0;
   font-family: open_sanssemibold;
 }
 
-.project-img>p {
+.project-img .prject-text {
   background-color: #fff;
   display: block;
   text-align: center;

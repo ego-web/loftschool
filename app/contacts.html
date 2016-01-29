@@ -67,7 +67,7 @@
                         </ul>
                     </nav>
                     <nav class="contacts">
-                        <div class="contacts-head">Контакты</div>
+                        <h2 class="contacts-head">Контакты</h2>
                         <ul class="contacts-list">
                             <li class="contacts-list-item">
                                 <a class="sprite sprite-email" href="mailto:ego_web@mail.ru">ego_web@mail.ru</a>
@@ -84,25 +84,26 @@
 
 			<main class="right_side">
 				<article >
-					<div class="right_side-header">У Вас интересный проект? Напишите мне</div>
+					<h1 class="right_side-header">У Вас интересный проект? Напишите мне</h1>
 
 					<form class="contact_form" action="" method="post">
-						<div class="contact_form-name contact_form-conteiner">
+				    <div class="clearfix">
+						<div class="contact_form-name">
 							<label class="contact_form-lable" for="name">Имя</label>
 							<input id="name" name="name" class="contact_form-class" type="text" maxlength="30" placeholder="Как к Вам обращаться" />
 						</div>
 
-						<div class="contact_form-email contact_form-conteiner">
+						<div class="contact_form-email">
 							<label class="contact_form-lable" for="email">Email </label>
 							<input id="email" name="email" class="contact_form-class" type="text" maxlength="30" placeholder="Куда мне писать" />
 						</div>
-
-						<div class="contact_form-message contact_form-conteiner">
-							<label class="contact_form-lable" for="masage">Сообщение </label>
+                    </div>
+						<div class="contact_form-message">
+							<label class="contact_form-lable" for="message">Сообщение </label>
 							<textarea id="message" name="message" class="contact_form-class contact_form-textarea" type="text" maxlength="500" placeholder="Кратко в чем суть"></textarea>
 						</div>
 
-						<div class="contact_form-capcha contact_form-conteiner">
+						<div class="contact_form-capcha">
 							<label class="contact_form-lable" for="capcha">Введите код, указаный на картинке </label>
 							<div class="capcha">
 								<img src="img/captcha.png" class="capcha-img" alt="Капча">
@@ -110,8 +111,8 @@
 								<input id="capcha" name="capcha" class="contact_form-class capcha-input" type="text" maxlength="30" placeholder="Введите код" />
 						</div>
 						<div class="buttons clearfix">
-							<input id="sendform" class="formsend" type="submit" name="submit" value="Отправить" />
-							<input id="clearform" class="formclear" type="reset" name="submit" value="Очистить" />
+							<button id="sendform" class="formsend" type="submit" name="submit" value="Отправить">Отправить</button>
+							<button id="clearform" class="formclear" type="reset" name="reset" value="Очистить">Очистить</button>
 						</div>
 					</form>
 				</article>
@@ -120,12 +121,14 @@
 	</div>
 
         <footer class="page-footer"> 
-            <div class="conatiner">
-                <div class="lock">
-                    <a href="/login.html" class="sprite sprite-locked login_text">вход</a>
-                </div>
-                <div class="copyright">&copy 2016, this is my sait, pls don't copy and don't steal it</div>
-            </div>
+        	<div class="conatiner">
+               
+                <a href="/login.html" class="lock">
+                <i class="sprite sprite-locked" ></i>
+                <span>вход</span>
+                </a>
+        		<div class="copyright">© 2016, this is my sait, pls don't copy and don't steal it</div>
+        	</div>
         </footer>
 </body>
 </html>

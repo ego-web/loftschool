@@ -1,21 +1,35 @@
 * {
-/*    box-sizing: border-box;*/
-
+    box-sizing: border-box;
 }
 
 html{
 	height: 100%;
 }
-p{
+p, h1, h2{
 	margin: 0;
 	padding: 0;
 }
+/*clearfix*/
+.clearfix:before, .clearfix:after {
+content: " ";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+/*End of clearfix*/
 body{
 	height: 100%;
 	background: url(../img/bg.jpg) center center fixed no-repeat;
 	background-size: cover;
 	font-family: open_sanslight, open_sansregular;
-/*	font-size: 1em;*/
 	color: #4a545d;
 }
 /*Footer bottom*/
@@ -23,10 +37,6 @@ body{
 	position: relative;
 	min-height: 100%;
 	min-width: 970px;
-/*
-    margin: 0;
-    padding: 0;
-*/
     height: auto!important;
 }
 .wrapper:after{
@@ -37,7 +47,7 @@ body{
 /*End of Footer bottom*/
 /*Header*/
 .container-big{
-    width: 1200px;
+    max-width: 1200px;
 	min-width: 970px;
 	height: 100%;
 	margin: 0 auto;
@@ -48,11 +58,12 @@ body{
 	width: 100%;
 	min-width: 970px;
 	height: 90px;
-	background: #b0716d;
+	background: #727070;
 	position: relative;
 	margin-bottom: 39px;
 	border-bottom: 7px solid #fff;
 	box-shadow: 0 0 1px rgba(0,0,0,0.1); 
+	background-image: url(../img/img-noise.png);
 }
 .header-logo-link{
 	position: absolute;
@@ -80,8 +91,6 @@ body{
 	display: inline-block;
 	list-style: none;
 	height: 47px;
-	/*width: 47px;*/
-	/*margin-left: 19px;*/
 	margin-left: 9px;
 	right: 0;
     text-indent: -9999px;
@@ -91,14 +100,11 @@ body{
 }
 /*End of Socials*/
 
-
 /*Footer*/
 .page-footer{
 	height: 80px;
 	margin-top: -80px;
-	/*min-width: 960px;*/
 	background: #eff3f7;
-	/*font-family: 'open sans' ;*/
 	color: 	#4a545d;
 	background-image: -moz-linear-gradient( 90deg, rgb(240, 240,240) 0%, rgb(255,255,255) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(240, 240,240) 0%, rgb(255,255,255) 100%);
@@ -106,103 +112,38 @@ body{
   box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 .conatiner{
-	/*padding-top: 23px;*/
 	max-width: 1200px;
 	min-width: 960px;
 	height: 100%;
 	margin: 0 auto;
 }
 .copyright{
-	/*margin: 0 180px;*/
-	/*padding-top: 7px;*/
-	/*float: left;*/
 	position: relative;
 	font-family: open_sanslight;
 	text-align: center;
 	font-size: 12px;
-	/*top: 26px;*/
 	top: 26px;
 	margin-top: -0.625em;
-
 }
 /*Login*/
 
+.lock>span{
+    float: right;
+    font-family: open_sansbold;
+	font-size: 14px;
+    color: #b0716d;
+}
 .lock{
 	display: block;
 	position: relative;
-    width: 100px;
+    float: left;
+    width: 64px;
     height: 23px;
-	top: 36px;
+	top: 26px;
 	left: 25%;
-}
-.lock>a:hover{
-/*background: #000;*/
-   width: 100px;
-    height: 23px;
-}
-.login_text{
-	/*position: relative;*/
-	color: #9c9c9c;
-	text-indent: 30px!important;
-	text-decoration: none;
-	font-family: open_sansbold;
-	font-variant: small-caps;
-	font-size: 14px;
-}
-/*.page-footer .lock-inner{
-	display: block;
-	height: 40px;
-	font-family: 'open sans' ;
-	font-size: 16px;
-	line-height: 2.2;
-	color: 	#4a545d;
-	text-decoration: none;
-	background: url(../img/icons.png) no-repeat;
-	padding-left: 24px;
-	background-position: bottom;
-}
+    z-index: 1;
 
-.lock .lock-inner:hover{
-	text-decoration: underline;
-	background: url(../img/icons.png) no-repeat;
-}*/
-/*End of Login*/
-/*End of Footer*/
-
-/*Public class*/
-/*.container{
-	width: 960px;
-	margin: 0 auto;
 }
-.text-center{
-	text-align: center;
-}
-.pull-left{
-	float: left;
-}
-.pull-right{
-	float: right;
-}*/
-/*clearfix*/
-.clearfix:before, .clearfix:after {
-content: " ";
-display: table;
-}
-.clearfix:after {
-clear: both;
-}
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-    *zoom: 1;
-}
-/*End of clearfix*/
-/*End of Public class*/
-
-
-
 
 /*______________________________________________________________________________*/
 .left_side {
@@ -238,7 +179,7 @@ clear: both;
 	border-radius: 0px 0px 5px 5px;
 }
 .mainmenu-item {
-	border: 1px solid #b6b6b6;
+	border-bottom: 1px solid #b6b6b6;
 	min-height: 56px;
 	margin: 0 auto;
 	background-color: rgb(233, 230, 229);
@@ -257,7 +198,7 @@ clear: both;
   display: block;
 }
 .mainmenu-item:hover {
-  border: 1px solid #c3c3c3;
+  border-bottom: 1px solid #c3c3c3;
   background-color: rgb(194, 192, 192);
   background-image: -webkit-linear-gradient(left, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
   background-image: -o-linear-gradient(left, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
@@ -306,6 +247,7 @@ clear: both;
 	list-style-type: none;
 	padding: 0;
 	margin: 0px;
+    overflow: hidden;
 }
 .contacts li:last-child {
 	border-radius: 0px 0px 5px 5px;
