@@ -47,7 +47,7 @@ body{
 /*End of Footer bottom*/
 /*Header*/
 .container-big{
-    max-width: 1200px;
+    max-width: 1220px;
 	min-width: 970px;
 	height: 100%;
 	margin: 0 auto;
@@ -60,7 +60,7 @@ body{
 	height: 90px;
 	background: #727070;
 	position: relative;
-	margin-bottom: 39px;
+	margin-bottom: 37px;
 	border-bottom: 7px solid #fff;
 	box-shadow: 0 0 1px rgba(0,0,0,0.1); 
 	background-image: url(../img/img-noise.png);
@@ -91,7 +91,7 @@ body{
 	display: inline-block;
 	list-style: none;
 	height: 47px;
-	margin-left: 9px;
+	margin-left: 10px;
 	right: 0;
     text-indent: -9999px;
 }
@@ -99,51 +99,6 @@ body{
 	margin-left: 0;
 }
 /*End of Socials*/
-
-/*Footer*/
-.page-footer{
-	height: 80px;
-	margin-top: -80px;
-	background: #eff3f7;
-	color: 	#4a545d;
-	background-image: -moz-linear-gradient( 90deg, rgb(240, 240,240) 0%, rgb(255,255,255) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(240, 240,240) 0%, rgb(255,255,255) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(240, 240,240) 0%, rgb(255,255,255) 100%);
-  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
-}
-.conatiner{
-	max-width: 1200px;
-	min-width: 960px;
-	height: 100%;
-	margin: 0 auto;
-}
-.copyright{
-	position: relative;
-	font-family: open_sanslight;
-	text-align: center;
-	font-size: 12px;
-	top: 26px;
-	margin-top: -0.625em;
-}
-/*Login*/
-
-.lock>span{
-    float: right;
-    font-family: open_sansbold;
-	font-size: 14px;
-    color: #b0716d;
-}
-.lock{
-	display: block;
-	position: relative;
-    float: left;
-    width: 64px;
-    height: 23px;
-	top: 26px;
-	left: 25%;
-    z-index: 1;
-
-}
 
 /*______________________________________________________________________________*/
 .left_side {
@@ -179,7 +134,8 @@ body{
 	border-radius: 0px 0px 5px 5px;
 }
 .mainmenu-item {
-	border-bottom: 1px solid #b6b6b6;
+	border: 1px solid #b6b6b6;
+	border-top: 0px solid #b6b6b6;
 	min-height: 56px;
 	margin: 0 auto;
 	background-color: rgb(233, 230, 229);
@@ -198,11 +154,12 @@ body{
   display: block;
 }
 .mainmenu-item:hover {
-  border-bottom: 1px solid #c3c3c3;
-  background-color: rgb(194, 192, 192);
-  background-image: -webkit-linear-gradient(left, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
-  background-image: -o-linear-gradient(left, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
-  background-image: linear-gradient(to right, rgb(194, 192, 192) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
+ 	border: 1px solid #b6b6b6;
+ border-top: 0px solid #b6b6b6;
+  /*background-color: rgba(194, 192, 192, 0.25);*/
+  background-image: -webkit-linear-gradient(left, rgb(210, 210, 210) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
+  background-image: -o-linear-gradient(left, rgb(210, 210, 210) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
+  background-image: linear-gradient(to right, rgb(210, 210, 210) 0%, rgb(227, 225, 225) 87%, rgb(230, 228, 228) 90%, rgb(232, 231, 231) 100%);
   box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 }
 .mainmenu-item:hover .mainmenu-link {
@@ -235,7 +192,7 @@ body{
 	background-image: -webkit-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
 	background-image: -ms-linear-gradient( 90deg, rgb(220,177,93) 0%, rgb(244,204,126) 90%);
 	box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.17),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
-	padding-top: 9px;
+	padding-top: 10px;
 	padding-left: 25px;
 	font-size: 20px;
 	font-family: open_sanssemibold;
@@ -255,8 +212,9 @@ body{
 }
 .contacts-list-item {
 	position: relative;
-	height: 38px;
+	height: 37px;
 	border: 1px solid rgb(214, 213, 211);
+	border-top: 0px solid rgb(214, 213, 211);
 	background-color: white;
 	background-image: -moz-linear-gradient( 90deg, rgb(233, 231, 231) 0%, rgba(251, 249, 249, 0) 100%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(233, 231, 231) 0%, rgba(251, 249, 249, 0) 100%);
@@ -266,6 +224,7 @@ body{
 .contacts-list-item:hover {
 	text-decoration: underline;
 	border: 1px solid rgb(214, 213, 211);
+	border-top: 0px solid rgb(214, 213, 211);
 	background-image: -moz-linear-gradient( 90deg, rgb(224, 197, 145) 0%, rgba(251, 249, 249, 0) 70%);
 	background-image: -webkit-linear-gradient( 90deg, rgb(224, 197, 145) 0%, rgba(251, 249, 249, 0) 70%);
 	background-image: -ms-linear-gradient( 90deg, rgb(224, 197, 145) 0%, rgba(251, 249, 249, 0) 70%);
@@ -304,7 +263,7 @@ body{
 	border-radius: 5px;
 	padding-bottom: 15px;
 	background-color: white;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
 	background-color: #fbfbfa;
 	background-image: -moz-linear-gradient( top, #fbfbfa, #f0eeed);
@@ -317,8 +276,8 @@ body{
 .right_side-header {
 	border: 1px solid #646464;
 	border-radius: 4px 4px 0px 0px;
-	min-height: 44px;
-	margin-bottom: 30px;
+	min-height: 45px;
+	margin-bottom: 20px;
 	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
 	background-color: rgb(123, 120, 120);
 	background-image: -moz-linear-gradient( 90deg, rgb(123, 120, 120) 0%, rgb(169, 168, 168) 100%);
@@ -327,8 +286,53 @@ body{
 	box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
 	font-family: open_sanssemibold;
 	font-size: 24px;
-	padding: 8px 0 10px 40px;
+	padding: 8px 0 12px 40px;
 	color: rgb(238, 237, 236);
 	text-align: left;
 	text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.004);
+}
+
+/*Footer*/
+.page-footer{
+	height: 80px;
+	margin-top: -80px;
+	background: #eff3f7;
+	color: 	#4a545d;
+	background-image: -moz-linear-gradient( 90deg, rgb(240, 240,240) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(240, 240,240) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(240, 240,240) 0%, rgb(255,255,255) 100%);
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.conatiner{
+	max-width: 1200px;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}
+.copyright{
+	position: relative;
+	font-family: open_sanslight;
+	text-align: center;
+	font-size: 12px;
+	top: 30px;
+	margin-top: -0.625em;
+}
+/*Login*/
+
+.lock>span{
+    float: right;
+    font-family: open_sansbold;
+	font-size: 14px;
+    color: #b0716d;
+}
+.lock{
+	display: block;
+	position: relative;
+    float: left;
+    width: 64px;
+    height: 23px;
+	top: 28px;
+	left: 26%;
+    z-index: 1;
+
 }
