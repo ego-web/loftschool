@@ -1,26 +1,91 @@
-.b-container{
-    width:200px;
-    height:150px;
-    background-color: #ccc;
-    margin:0px auto;
-    padding:10px;
-    font-size:30px;
-    color: #fff;
-}
 .b-popup{
+    display: none;
     width:100%;
     min-height:100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
     position:fixed;
     top:0px;
+    margin:0px auto;
+
 }
-.b-popup .b-popup-content{
-    margin:40px auto 0px auto;
-    width:100px;
+.b-popup_a{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.65);
+    z-index: -1;
+}
+.b-popup-content {
+    position: absolute;
+    top: 30%;
+    left: 38%;
+}
+
+.login_form {
+    width: 330px;
+    background-color: #f1f0ef;
+    border: 1px solid #d6d4d3;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.authorize {
+    font-family: open_sanslight, sans-serif;
+    font-size: 12px;
+    color: #f1efef;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.login_input {
+    display: block;
+    width: 248px;
     height: 40px;
-    padding:10px;
-    background-color: #c5c5c5;
-    border-radius:5px;
-    box-shadow: 0px 0px 10px #000;
+    border-radius: 4px;
+    border: 1px solid #d6d4d3;
+    background-image: linear-gradient(rgba(251,249,249,0), #e9e7e7);
+    margin: 25px auto;
+    padding-left: 30px;
+    font-family: open_sanslight, sans-serif;
+    font-size: 12px;
+    color: #c7c6c6;
 }
+
+.login_input_email {
+}
+
+.login_input_password {
+ }
+
+.login_checkbox {
+    margin-left: 25px;
+    /*vertical-align: middle;*/
+}
+
+.remember_me {
+    font-family: open_sansregular, sans-serif;
+    color: #727070;
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.login_submit {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #d6d4d3;
+    background-image: linear-gradient(rgba(251,249,249,0), #e9e7e7);
+    color: #727070;
+    width: 150px;
+    height: 40px;
+    font-family: open_sanssemibold, sans-serif;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.login_submit:hover {
+    border: 1px solid #50c8aa;
+    background-image: linear-gradient(#5fdcbd, #3aa087);
+    color: #1e7465;
+}
+
