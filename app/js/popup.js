@@ -6,7 +6,7 @@
         PopUpHide();
     });
 //Функция отображения PopUp
-function PopUpShow(){
+function PopUpEnterShow(){
     $("#popup1").show();
 }
 //Функция скрытия PopUp

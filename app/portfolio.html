@@ -19,7 +19,9 @@
         <link rel="stylesheet" href="css/portfolio.css">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/sprite.css">
-        <!--modernizer-->
+        <link rel="stylesheet" href="css/popup.css">
+
+          <!--modernizer-->
         <script src="bower/modernizer/modernizr.js"></script>
 
     </head>
@@ -42,7 +44,6 @@
                         </li>
                         <li class="socials-item">
                           <a href="http://twitter.com" target="_blank" class="sprite sprite-tw">twitter.com</a>
-                        </li>
                         </li>
                         <li class="socials-item">
                           <a href="http://github.com" target="_blank" class="sprite sprite-gh">github.com</a>
@@ -121,7 +122,9 @@
 						</li>
 						<li class="addproject">
 							<i class="sprite sprite-school">иконка</i>
-							<a href="#" class="addproject-link">Добавить проект</a>
+                            <a href="javascript:PopUpAddShow()"
+                               class="addproject-link">Добавить проект
+                            </a>
 						</li>
 					</ul>
 
@@ -130,16 +133,63 @@
 		</section>
 	</div>
 
-        <footer class="page-footer"> 
-            <div class="conatiner">
-               
-                <a href="/login.html" class="lock">
+    <!--add_project_popup-->
+<section class="add_project_popup">
+    <div class="b-popup" id="popup2" >
+        <div class="b-popup-content">
+            <h2 class="authorize">Добавление проекта</h2>
+            <form action="URL" class="login_form">
+                <label class="label_add" for="login_checkbox">Название проекта</label>
+                <input class="login_input login_input_email" type="text" placeholder="Введите название">
+                <label class="label_add" for="login_checkbox">Картинка проекта</label>
+                <div class="add_pic">
+                <input class=" input_add_pic" type="text" placeholder="Загрузите изображение">
+                <button class="button_add_pic" type="submit" name="submit" value="submit">->>-</button>
+                <input class="file_add_pic" type="file" size="1" title="1" name="file_add_pic" value="submit" accept="image/*">
+
+                </div>
+                <label class="label_add" for="login_checkbox">URL проекта</label>
+                <input class="login_input login_input_password" type="text" placeholder="Добавьте ссылку">
+                <label class="label_add" for="login_checkbox">Описание проекта</label>
+                <input class="login_input login_input_password" type="text" placeholder="Пара слов о Вашем проекте">
+                <button class="login_submit" type="submit" name="submit" value="submit">Добавить</button>
+            </form>
+        </div>
+        <a class="b-popup_a" href="javascript:PopUpAddHide()"></a>
+    </div>
+</section>
+
+    <!--//footer-->
+    <footer class="page-footer">
+        <div class="conatiner">
+            <a href="javascript:PopUpEnterShow()" class="lock">
                 <i class="sprite sprite-locked" ></i>
                 <span>вход</span>
-                </a>
-                <div class="copyright">© 2016, this is my sait, pls don't copy and don't steal it</div>
-            </div>
-        </footer>
+            </a>
+            <div class="copyright">© 2016, this is my sait, pls don't copy and don't steal it</div>
+        </div>
 
-</body>
-</html>
+        <div class="b-popup" id="popup1" >
+            <div class="b-popup-content">
+                <h2 class="authorize">Пожалуйста, вторизуйтесь:</h2>
+                <form action="URL" class="login_form">
+                    <br>
+                    <input class="login_input login_input_email" type="text" placeholder="Введите Email">
+                    <input class="login_input login_input_password" type="text" placeholder="Введите Пароль">
+                    <input class="login_checkbox" id="login_checkbox" type="checkbox">
+                    <label class="remember_me" for="login_checkbox">Запомнить меня?</label>
+                    <button class="login_submit" type="submit" name="submit" value="submit">Войти</button>
+                </form>
+            </div>
+            <a class="b-popup_a" href="javascript:PopUpHide()"></a>
+        </div>
+    </footer>
+
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/add_project_popup.js"></script>
+    </body>
+
+ </html>
+
