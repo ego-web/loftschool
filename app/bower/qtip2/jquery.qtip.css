@@ -194,7 +194,22 @@
 	.qtip-red .qtip-titlebar .ui-state-hover{
 		border-color: #D95252;
 	}
-
+.qtip-my {
+	/*display: block;*/
+	/*position: absolute;*/
+	/*background-image: url(../img/sprite_small_icon.png);*/
+	padding: 3px 6px;
+	text-decoration: none;
+	font-family: open_sanssemibold;
+	font-size: 12px;
+	color: #1e7465;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+	border-radius: 2px;
+	background-image: -moz-linear-gradient( 90deg, rgb( 211, 118, 84 ) 0%, rgb( 243, 162, 135 ) 89.746%);
+	background-image: -webkit-linear-gradient( 90deg, rgb( 211, 118, 84 ) 0%, rgb( 243, 162, 135 ) 89.746%);
+	box-shadow: 0 2px 2px 0 rgba( 9, 9, 9, 0.4 );
+}
+}
 
 /*! Green tooltip style */
 .qtip-green{

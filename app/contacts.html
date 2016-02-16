@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sprite.css">
     <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+
     <!--modernizer-->
     <script src="bower/modernizer/modernizr.js"></script>
 
@@ -93,19 +95,19 @@
 
                         <div class="contact_form-name">
                             <label class="contact_form-lable" for="name">Имя</label>
-                            <input id="name" name="name" title="left" class="contact_form-class" type="text" maxlength="30"
+                            <input id="name" name="name" qtip-position="left" qtip-content="Вы не ввели имя!" class="contact_form-class" type="text" maxlength="30"
                                    placeholder="Как к Вам обращаться"/>
                         </div>
 
                         <div class="contact_form-email">
                             <label class="contact_form-lable" for="email">Email </label>
-                            <input id="email"  name="email" title="left" class="contact_form-class" type="text" maxlength="30"
+                            <input id="email"  name="email" qtip-position="right" qtip-content="Вы не ввели Email!" class="contact_form-class" type="text" maxlength="30"
                                    placeholder="Куда мне писать"/>
                         </div>
                     </div>
                     <div class="contact_form-message">
                         <label class="contact_form-lable" for="message">Сообщение </label>
-                        <textarea id="message" name="message" title="left" class="contact_form-class contact_form-textarea"
+                        <textarea id="message" name="message" qtip-position="right"  qtip-content="Вы не ввели сообщение!" class="contact_form-class contact_form-textarea"
                                   type="text" maxlength="500" placeholder="Кратко в чем суть"></textarea>
                     </div>
 
@@ -114,7 +116,7 @@
                         <div class="capcha">
                             <img src="img/captcha.png" class="capcha-img" alt="Капча">
                         </div>
-                        <input id="capcha" name="capcha" title="left" class="contact_form-class capcha-input" type="text"
+                        <input id="capcha" name="capcha" qtip-position="right"  qtip-content="Вы не ввели код!" class="contact_form-class capcha-input" type="text"
                                maxlength="30" placeholder="Введите код"/>
                     </div>
                     <div class="buttons clearfix">
@@ -141,8 +143,9 @@
 </footer>
 <script src="bower/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="bower/jquery-validation/dist/jquery.validate.js"></script>
-<script src="js/main.js"></script>
-<script src="js/popup.js"></script>
+<!--<script src="js/popup.js"></script>-->
 <script src="bower/qtip2/jquery.qtip.js"></script>
+<script src="js/contactMe.js"></script>
+<script src="js/validation.js"></script>
 </body>
 </html>

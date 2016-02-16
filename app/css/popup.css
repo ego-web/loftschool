@@ -182,3 +182,10 @@
     font-weight: normal;
     color: #222;
 }
+.has-error{
+    border: 2px solid rgba( 111, 118, 84, 0.4 );
+    background-image: -moz-linear-gradient( 90deg, rgba( 111, 118, 84, 0.4 ) 0%, rgba( 243, 162, 135, 0.4 ) 89.746%);
+    background-image: -webkit-linear-gradient( 90deg, rgba( 211, 118, 84, 0.4 ) 0%, rgba( 243, 162, 135, 0.4 ) 89.746%);
+
+    /*background: rgba(125,0,0,0.4);*/
+}
