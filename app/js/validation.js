@@ -10,7 +10,6 @@ var validation = (function () {
 		$('form').on('reset', _clearForm);
 	};
 
-
 	var _removeError = function () {
 		$(this).removeClass('has-error');
 	};
@@ -18,7 +17,7 @@ var validation = (function () {
 	var _clearForm = function (form) {
 		var form = $(this);
 		form.find('.has-error').removeClass('has-error');
-		form.find('.input, .textarea').trigger('hideTooltip');
+		form.find('input, textarea').trigger('hideTooltip');
 	};
 
 	var _createQtip = function (element, position) {
