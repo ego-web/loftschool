@@ -214,33 +214,34 @@
             </section>
         </div>
 
-        <footer class="page-footer"> 
+    <!--//footer-->
+    <footer class="page-footer">
         	<div class="conatiner">
-                <a href="javascript:PopUpEnterShow()" class="lock"><i class="sprite sprite-locked" ></i><span>вход</span></a>
-        		<div class="copyright">© 2016, this is my sait, pls don't copy and don't steal it</div>
+                <div class="copyright">© 2016, this is my sait, pls don't copy and don't steal it</div>
+                <a href="#" class="lock"><i class="sprite sprite-locked" ></i><span>вход</span></a>
         	</div>
 
             <div class="b-popup" id="popup1" >
                 <div class="b-popup-content">
                     <h2 class="authorize">Пожалуйста, вторизуйтесь:</h2>
-                    <form action="" class="login_form" method="post" id="register_form">
+                    <form action="#" id="login_form" class="login_form" method="post" >
                         <br>
-                        <input class="login_input login_input_email" type="text" placeholder="Введите Email" title="Введите Email">
-                        <input class="login_input login_input_password" type="text" placeholder="Введите Пароль" title="Введите Email">
+                        <input class="login_input login_input_email" qtip-position="right"  qtip-content="Вы не ввели код!" type="text" placeholder="Введите Email">
+                        <input class="login_input login_input_password" qtip-position="right"  qtip-content="Вы не ввели код!" type="text" placeholder="Введите Пароль">
                         <input class="login_checkbox" id="login_checkbox" type="checkbox">
                         <label class="remember_me" for="login_checkbox">Запомнить меня?</label>
                         <button class="login_submit" type="submit" name="submit" value="submit">Войти</button>
                     </form>
                 </div>
-                <a class="b-popup_a" href="javascript:PopUpHide()"></a>
+                <a href="#" class="popup_a"></a>
             </div>
     </footer>
 
     <script src="bower/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="bower/jquery-validation/dist/jquery.validate.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/popup.js"></script>
     <script src="bower/qtip2/jquery.qtip.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/contactMe.js"></script>
+    <script src="js/popup.js"></script>
 
     </body>
 

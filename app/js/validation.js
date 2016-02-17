@@ -45,6 +45,17 @@ var validation = (function () {
 					return $(this).attr('qtip-content');
 				}
 			},
+			events: {
+				render: function(event, api) {
+					$(window).bind('keydown', function(e) {
+						if(e.keyCode === 27) {
+							//api.hide(e);
+							element.removeClass('has-error');
+							element.trigger('hideTooltip');
+						}
+					});
+				}
+			},
 			show:     {
 				event: 'show'
 			},

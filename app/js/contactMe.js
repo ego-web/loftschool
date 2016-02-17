@@ -7,18 +7,19 @@ var contactMe = (function () {
 	//listen events
 	var _setUpListeners = function () {
 		$('#jform').on('submit', _submitForm);
+		$('#add_project').on('submit', _submitForm);
+		$('#login_form').on('submit', _submitForm);
 	};
 	
 	var _submitForm = function (ev) {
 		ev.preventDefault();
-
 		var form = $(this),
 		    url = 'contactme.php',
 		    defObj = _ajaxForm(form, url);
 	}
 
 	var _ajaxForm = function (form, url) {
-				if(!validation.validateForm(form))return false;
+		if(!validation.validateForm(form))return false;
 
 	};
 	//return object (public method)
