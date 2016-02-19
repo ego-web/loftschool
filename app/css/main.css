@@ -258,6 +258,8 @@ body{
 	width: 652px;
 	
 }
+
+/*noinspection CssInvalidPropertyValue*/
 .right_side>article {
 	border: 1px solid #bfbfbf;
 	border-radius: 5px;

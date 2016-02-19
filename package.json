@@ -2,6 +2,7 @@
   "name": "dz1_egorov",
   "devDependencies": {
     "browser-sync": "^2.11.1",
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1"
   }
 }
