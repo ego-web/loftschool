@@ -7,18 +7,42 @@ var validation = (function () {
 	//listen events
 	var _setUpListeners = function () {
 		$('form').on('keydown', '.has-error', _removeError);
-		$('form').on('reset', _clearForm);
+		$('form').on('reset', _onClearForm);
+        $ ("div").find ($ (".popup_a")).on('click', _onClearForm);
 	};
 
 	var _removeError = function () {
 		$(this).removeClass('has-error');
 	};
 
-	var _clearForm = function (form) {
-		var form = $(this);
+	var clearForm = function (form) {
+		//var form = $(this);
+
 		form.find('.has-error').removeClass('has-error');
 		form.find('input, textarea').trigger('hideTooltip');
-	};
+        var elements = form.find('input, textarea').not('input[type="file"],input[type="hidden"]'),
+            valid =true;
+
+/*        $.each(elements, function (index, val) {
+            var element = $(val),
+                value   = element.val(),
+                position     = element.attr('qtip-position');
+            if(value.length ===0) {
+                element.addClass('has-error');
+                _createQtip(element, position);
+                valid = false;
+            }
+        });*/
+
+
+    };
+
+	var _onClearForm = function(){
+		var form = $(this);
+		clearForm(form);
+
+	}
+
 
 	var _createQtip = function (element, position) {
 		if (position === 'right') {
@@ -49,7 +73,6 @@ var validation = (function () {
 				render: function(event, api) {
 					$(window).bind('keydown', function(e) {
 						if(e.keyCode === 27) {
-							//api.hide(e);
 							element.removeClass('has-error');
 							element.trigger('hideTooltip');
 						}
@@ -95,6 +118,7 @@ var validation = (function () {
 	//return object (public method)
 	return {
 		init: init,
+		clearForm: clearForm,
 		validateForm: validateForm
 	};
 })();

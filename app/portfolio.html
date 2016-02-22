@@ -141,25 +141,24 @@
             <h2 class="authorize">Добавление проекта</h2>
             <form action="URL" id="add_project" class="login_form">
                 <label class="label_add" for="login_checkbox">Название проекта</label>
-                <input class="login_input login_input_email" qtip-position="left" qtip-content="Вы не ввели имя!"
-                       type="text" placeholder="Введите название" title="Введите Email">
-                <label class="label_add" for="login_checkbox">Картинка проекта</label>
+                <input id="login_checkbox" class="login_input login_input_email" qtip-position="left" qtip-content="Вы не ввели имя!" type="text" placeholder="Введите название" title="Введите Email">
+                <label class="label_add" for="input_add_pic">Картинка проекта</label>
 
                 <div class="add_pic">
-                    <input id=" input_add_pic" class=" input_add_pic" qtip-position="left" qtip-content="Вы не ввели имя!" type="text"
+                    <input id="input_add_pic" class=" input_add_pic" qtip-position="left" qtip-content="Вы не ввели имя!" type="text"
                            placeholder="Загрузите изображение">
                     <input id="file_add_pic" class="file_add_pic" type="file" name="file_add_pic" value="submit"
                            accept="image/*">
                     <button class="button_add_pic " type="submit" name="submit" value="submit">
-                        <div class=" sprite sprite-iCloud-down"></div>
+                        <i class=" sprite sprite-iCloud-down"></i>
                     </button>
                 </div>
 
-                <label class="label_add" for="login_checkbox">URL проекта</label>
-                <input class="login_input login_input_password" qtip-position="left" qtip-content="Вы не ввели имя!"
+                <label class="label_add" for="form_email">URL проекта</label>
+                <input id="form_email" class="login_input login_input_password" qtip-position="left" qtip-content="Вы не ввели имя!"
                        type="text" placeholder="Добавьте ссылку" title="Введите Email">
-                <label class="label_add" for="login_checkbox">Описание проекта</label>
-                <input class="login_input login_input_password" qtip-position="left" qtip-content="Вы не ввели имя!"
+                <label class="label_add" for="description">Описание проекта</label>
+                <input id = "description" class="login_input login_input_password" qtip-position="left" qtip-content="Вы не ввели имя!"
                        type="text" placeholder="Пара слов о Вашем проекте" title="Введите Email">
                 <button class="login_submit" type="submit" name="submit" value="submit">Добавить</button>
             </form>
@@ -192,8 +191,6 @@
         <a href="#" class="popup_a"></a>
     </div>
 </footer>
-
-<blink></blink>
 
 <script src="bower/jquery/dist/jquery.js"></script>
 <script src="bower/qtip2/jquery.qtip.js"></script>
