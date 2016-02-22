@@ -13,16 +13,16 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--CSS-->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sprite.css">
     <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/jquery.qtip.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 
     <!--modernizer-->
-    <script src="js/modernizr.js"></script>
+    <script src="bower/modernizer/modernizr.js"></script>
 
 </head>
 <body>
@@ -139,11 +139,11 @@
             <h2 class="authorize">Добавление проекта</h2>
             <form action="URL" id="add_project" class="login_form">
                 <label class="label_add" for="login_checkbox">Название проекта</label>
-                <input id="login_checkbox" class="login_input login_input_email" qtip-position="left" qtip-content="Вы не ввели имя!" type="text" placeholder="Введите название" title="Введите Email">
+                <input id="login_checkbox" class="login_input login_input_email" qtip-position="left" qtip-content="Введите название проекта!" type="text" placeholder="Введите название" title="Введите Email">
                 <label class="label_add" for="input_add_pic">Картинка проекта</label>
 
                 <div class="add_pic">
-                    <input id="input_add_pic" class=" input_add_pic" qtip-position="left" qtip-content="Вы не ввели имя!" type="text"
+                    <input id="input_add_pic" class=" input_add_pic" qtip-position="left" qtip-content="Загрузите изображение!" type="text"
                            placeholder="Загрузите изображение">
                     <input id="file_add_pic" class="file_add_pic" type="file" name="file_add_pic" value="submit"
                            accept="image/*">
@@ -153,10 +153,10 @@
                 </div>
 
                 <label class="label_add" for="form_email">URL проекта</label>
-                <input id="form_email" class="login_input login_input_password" qtip-position="left" qtip-content="Вы не ввели имя!"
+                <input id="form_email" class="login_input login_input_password" qtip-position="left" qtip-content="Добавьте URL проекта!"
                        type="text" placeholder="Добавьте ссылку" title="Введите Email">
                 <label class="label_add" for="description">Описание проекта</label>
-                <input id = "description" class="login_input login_input_password" qtip-position="left" qtip-content="Вы не ввели имя!"
+                <input id = "description" class="login_input login_input_password" qtip-position="left" qtip-content="Добавьте описание проекта!"
                        type="text" placeholder="Пара слов о Вашем проекте" title="Введите Email">
                 <button class="login_submit" type="submit" name="submit" value="submit">Добавить</button>
             </form>
@@ -177,9 +177,9 @@
             <h2 class="authorize">Пожалуйста, вторизуйтесь:</h2>
             <form action="#" id="login_form" class="login_form" method="post">
                 <br>
-                <input class="login_input login_input_email" qtip-position="right" qtip-content="Вы не ввели код!"
+                <input class="login_input login_input_email" qtip-position="right" qtip-content="Введите Ваш Email!"
                        type="text" placeholder="Введите Email">
-                <input class="login_input login_input_password" qtip-position="right" qtip-content="Вы не ввели код!"
+                <input class="login_input login_input_password" qtip-position="right" qtip-content="Введите пароль!"
                        type="text" placeholder="Введите Пароль">
                 <input class="login_checkbox" id="login_checkbox" type="checkbox">
                 <label class="remember_me" for="login_checkbox">Запомнить меня?</label>
@@ -190,8 +190,8 @@
     </div>
 </footer>
 
-<script src="js/jquery.js"></script>
-<script src="js/jquery.qtip.js"></script>
+<script src="bower/jquery/jquery.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
 <script src="js/validation.js"></script>
 <script src="js/contactMe.js"></script>
 <script src="js/popup.js"></script>

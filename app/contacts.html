@@ -13,16 +13,16 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!--CSS-->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/sprite.css">
     <link rel="stylesheet" href="css/popup.css">
-    <link rel="stylesheet" href="css/jquery.qtip.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
 
     <!--modernizer-->
-    <script src="js/modernizr.js"></script>
+    <script src="bower/modernizer/modernizr.js"></script>
 
 </head>
 <body>
@@ -146,9 +146,9 @@
             <h2 class="authorize">Пожалуйста, вторизуйтесь:</h2>
             <form action="#" id="login_form" class="login_form" method="post">
                 <br>
-                <input class="login_input login_input_email" qtip-position="right" qtip-content="Вы не ввели код!"
+                <input class="login_input login_input_email" qtip-position="right" qtip-content="Введите Ваш Email!"
                        type="text" placeholder="Введите Email">
-                <input class="login_input login_input_password" qtip-position="right" qtip-content="Вы не ввели код!"
+                <input class="login_input login_input_password" qtip-position="right" qtip-content="Введите пароль!"
                        type="text" placeholder="Введите Пароль">
                 <input class="login_checkbox" id="login_checkbox" type="checkbox">
                 <label class="remember_me" for="login_checkbox">Запомнить меня?</label>
@@ -159,8 +159,8 @@
     </div>
 </footer>
 
-<script src="js/jquery.js"></script>
-<script src="js/jquery.qtip.js"></script>
+<script src="bower/jquery/jquery.js"></script>
+<script src="bower/qtip2/jquery.qtip.js"></script>
 <script src="js/validation.js"></script>
 <script src="js/contactMe.js"></script>
 <script src="js/popup.js"></script>
