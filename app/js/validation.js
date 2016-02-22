@@ -23,25 +23,13 @@ var validation = (function () {
         var elements = form.find('input, textarea').not('input[type="file"],input[type="hidden"]'),
             valid =true;
 
-/*        $.each(elements, function (index, val) {
-            var element = $(val),
-                value   = element.val(),
-                position     = element.attr('qtip-position');
-            if(value.length ===0) {
-                element.addClass('has-error');
-                _createQtip(element, position);
-                valid = false;
-            }
-        });*/
-
-
     };
 
 	var _onClearForm = function(){
 		var form = $(this);
 		clearForm(form);
 
-	}
+	};
 
 
 	var _createQtip = function (element, position) {
@@ -66,7 +54,7 @@ var validation = (function () {
 			content:  {
 				text:
 					function () {
-					return $(this).attr('qtip-content');
+					return $(this).attr('title');
 				}
 			},
 			events: {
@@ -105,7 +93,7 @@ var validation = (function () {
 		$.each(elements, function (index, val) {
 			var element = $(val),
 			    value   = element.val(),
-			    position     = element.attr('qtip-position');
+			    position     = element.attr('alt');
 		if(value.length ===0) {
 			element.addClass('has-error');
 			_createQtip(element, position);

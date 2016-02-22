@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
     <!--modernizer-->
     <script src="bower/modernizer/modernizr.js"></script>
+    <!--[if IE]><script src="js/html5shiv.min.js"></script><![endif]-->
 
 </head>
 <body>
@@ -30,6 +31,7 @@
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
+
 <div class="wrapper">
 
     <header class="page-header">
@@ -230,9 +232,9 @@
             <h2 class="authorize">Пожалуйста, вторизуйтесь:</h2>
             <form action="#" id="login_form" class="login_form" method="post">
                 <br>
-                <input class="login_input login_input_email" qtip-position="right" qtip-content="Введите Ваш Email!"
+                <input class="login_input login_input_email" alt="right" title="Введите Ваш Email!"
                        type="text" placeholder="Введите Email">
-                <input class="login_input login_input_password" qtip-position="right" qtip-content="Введите пароль!"
+                <input class="login_input login_input_password" alt="right" title="Введите пароль!"
                        type="text" placeholder="Введите Пароль">
                 <input class="login_checkbox" id="login_checkbox" type="checkbox">
                 <label class="remember_me" for="login_checkbox">Запомнить меня?</label>

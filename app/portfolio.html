@@ -23,6 +23,7 @@
 
     <!--modernizer-->
     <script src="bower/modernizer/modernizr.js"></script>
+    <!--[if IE]><script src="js/html5shiv.min.js"></script><![endif]-->
 
 </head>
 <body>
@@ -138,12 +139,12 @@
         <div class="b-popup-content">
             <h2 class="authorize">Добавление проекта</h2>
             <form action="URL" id="add_project" class="login_form">
-                <label class="label_add" for="login_checkbox">Название проекта</label>
-                <input id="login_checkbox" class="login_input login_input_email" qtip-position="left" qtip-content="Введите название проекта!" type="text" placeholder="Введите название" title="Введите Email">
+                <label class="label_add" for="lname_ogin_checkbox">Название проекта</label>
+                <input id="lname_ogin_checkbox" class="login_input login_input_email" alt="left" title="Введите название проекта!" type="text" placeholder="Введите название" title="Введите Email">
                 <label class="label_add" for="input_add_pic">Картинка проекта</label>
 
                 <div class="add_pic">
-                    <input id="input_add_pic" class=" input_add_pic" qtip-position="left" qtip-content="Загрузите изображение!" type="text"
+                    <input id="input_add_pic" class=" input_add_pic" alt="left" title="Загрузите изображение!" type="text"
                            placeholder="Загрузите изображение">
                     <input id="file_add_pic" class="file_add_pic" type="file" name="file_add_pic" value="submit"
                            accept="image/*">
@@ -153,10 +154,10 @@
                 </div>
 
                 <label class="label_add" for="form_email">URL проекта</label>
-                <input id="form_email" class="login_input login_input_password" qtip-position="left" qtip-content="Добавьте URL проекта!"
+                <input id="form_email" class="login_input login_input_password" alt="left" title="Добавьте URL проекта!"
                        type="text" placeholder="Добавьте ссылку" title="Введите Email">
                 <label class="label_add" for="description">Описание проекта</label>
-                <input id = "description" class="login_input login_input_password" qtip-position="left" qtip-content="Добавьте описание проекта!"
+                <input id = "description" class="login_input login_input_password" alt="left" title="Добавьте описание проекта!"
                        type="text" placeholder="Пара слов о Вашем проекте" title="Введите Email">
                 <button class="login_submit" type="submit" name="submit" value="submit">Добавить</button>
             </form>
@@ -177,9 +178,9 @@
             <h2 class="authorize">Пожалуйста, вторизуйтесь:</h2>
             <form action="#" id="login_form" class="login_form" method="post">
                 <br>
-                <input class="login_input login_input_email" qtip-position="right" qtip-content="Введите Ваш Email!"
+                <input class="login_input login_input_email" alt="right" title="Введите Ваш Email!"
                        type="text" placeholder="Введите Email">
-                <input class="login_input login_input_password" qtip-position="right" qtip-content="Введите пароль!"
+                <input class="login_input login_input_password" alt="right" title="Введите пароль!"
                        type="text" placeholder="Введите Пароль">
                 <input class="login_checkbox" id="login_checkbox" type="checkbox">
                 <label class="remember_me" for="login_checkbox">Запомнить меня?</label>
